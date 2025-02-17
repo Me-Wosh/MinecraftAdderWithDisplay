@@ -1,6 +1,25 @@
 # 4-bit adder with BCD converter and 7-segment display 
 
-Real world adder, BCD converter and display recreated in Minecraft using Minecraft redstone and redstone-based logic gates. It can add two 4-bit numbers and display numbers from 0 to 30. 
+Real world adder, BCD converter and display made in Minecraft using Minecraft redstone and redstone-based logic gates. It can add two 4-bit numbers and display numbers from 0 to 30. 
+
+<div align="center">
+   <img height="400" src="https://github.com/user-attachments/assets/3e4de494-f249-4ee4-a19d-036813df6b13" alt="entire minecraft circuit" />
+</div>
+
+## Table of contents
+
+- [Compatibility](#compatibility)
+- [Installation](#installation)
+- [Demo](#demo)
+- [Made with](#made-with)
+- [How it works](#how-it-works)
+   - [Truth table](#truth-table)
+   - [Karnaugh map](#karnaugh-map)
+   - [Corresponding circuit](#corresponding-circuit)
+- [Logic gates](#logic-gates)
+- [Minecraft logic gates](#minecraft-logic-gates)
+- [Half adder and full adder](#half-adder-and-full-adder)
+- [BCD converter](#bcd-converter)
 
 ## Compatibility
 
@@ -28,6 +47,10 @@ I guess that's mainly because of the new world generation because older versions
    | Windows | `%APPDATA%\.minecraft\saves`                               |
    | Linux   | `~/Library/Application Support/minecraft/saves`            |
    | MacOS   | `~/.minecraft/saves`                                       |
+
+## Demo
+
+[minecraft circuit demo](https://github.com/user-attachments/assets/efc949db-956c-4608-8483-e4b7622ee5ee)
 
 ## Made with
 
@@ -327,6 +350,18 @@ where multiplication represents AND logic gate, addition OR gate and ! represent
 </table>
 
 Images author: [Inductiveload](https://commons.wikimedia.org/wiki/User:Inductiveload)
+
+## Minecraft logic gates
+
+Here are logic gates I used:
+
+<img width="200" src="https://github.com/user-attachments/assets/bc67ac6a-7360-4f2a-99a6-35bbe6fcf5db" alt="minecraft not logic gate" /> NOT
+
+<img width="200" src="https://github.com/user-attachments/assets/1ecf279b-32a5-4e7a-8b2a-18ab129814ef" alt="minecraft and logic gate" /> AND
+
+<img width="200" src="https://github.com/user-attachments/assets/4a8fb014-aed0-4622-9e23-ccd3c90efbdf" alt="minecraft or logic gate" /> OR (yes, in the real world you would end up in prison for combining 2 cables into 1).
+
+<img width="200" src="https://github.com/user-attachments/assets/10abfb7d-b364-4d12-816f-ac0ba117a9e5" alt="minecraft xor logic gate" /> XOR
 
 ## Half adder and full adder
 
