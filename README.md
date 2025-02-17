@@ -326,4 +326,21 @@ where multiplication represents AND logic gate, addition OR gate and ! represent
    </tr>
 </table>
 
-Images author: Inductiveload
+Images author: [Inductiveload](https://commons.wikimedia.org/wiki/User:Inductiveload)
+
+## Half adder and full adder
+
+Adder is a digital circuit that does exactly what the name suggests - adds 2 numbers (A and B), produces a result (S) of this operation and an overflow (C or C<sub>out</sub>).
+
+![half adder](https://github.com/user-attachments/assets/10d0c440-ddd2-4be9-aef6-f9712ae1c5ea) Half adder
+![fulladder2](https://github.com/user-attachments/assets/4adecf03-7d2c-499e-85bd-64bd8b8f808b) Full adder
+
+Images authors: [Inductiveload](https://commons.wikimedia.org/wiki/User:Inductiveload), [Cburnett](https://en.wikipedia.org/wiki/User:Cburnett)
+
+The difference between a full adder and a half adder is that the full adder not only produces an overflow as an output but also takes an overflow as an input. This way you can combine multiple adders together to handle larger inputs. In my case I combined 4 adders to achieve addition of two 4-bit numbers.
+
+## BCD converter
+
+Since any binary number is just a chain of ones and zeroes it doesn't give us enough information about the number we want to display. For example number 12 in a binary system is just 1100 - not helpful at all. That's why we can use one of many BCDs - [Binary Coded Decimal](https://en.wikipedia.org/wiki/Binary-coded_decimal) to transform a binary number into a more readable input. Since 12 acts as two numbers: 1 and 2 I also converted the binary number into 2 numbers: 0001 (1) and 0010 (2). Now I can tell my first display to show the number 1 and my second display to show the number 2.
+
+You can see that I used a 5-bit BCD converter even though my adder is only 4-bit. That's because addition of two 4-bit numbers can result into any number from 0 to 30 however numbers larger than 15 are not 4-bit anymore and instead they are 5-bit. Since the output overflow from the last adder already acts as the 5-th bit I just passed it into my BCD converter.
