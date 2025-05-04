@@ -45,8 +45,8 @@ I guess that's mainly because of the new world generation because older versions
    | System  | Location                                                   |
    | ------- | ---------------------------------------------------------- |
    | Windows | `%APPDATA%\.minecraft\saves`                               |
-   | Linux   | `~/Library/Application Support/minecraft/saves`            |
-   | MacOS   | `~/.minecraft/saves`                                       |
+   | Linux   | `~/.minecraft/saves`                                       |
+   | MacOS   | `~/Library/Application Support/minecraft/saves`            |
 
 ## Demo
 
